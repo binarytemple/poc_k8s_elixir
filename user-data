@@ -2,8 +2,10 @@
 
 set -e
 
+echo "intended to be run on Amazon Linux 2 EC2 instances"
+
 sudo yum -y update
-sudo yum -y install htop tmux zsh amzn2-core
+sudo yum -y install htop tmux zsh amzn2-core git
 
 cat <<END | sudo tee /root/.tmux.conf
 set-option -g default-shell /bin/zsh
@@ -82,3 +84,7 @@ sudo kubeadm init
 sudo kubectl cluster-info
 sudo kubectl get svc
 sudo kubectl config current-context
+
+git clone https://github.com/bryanhuntesl/poc_k8s_elixir.git
+
+
