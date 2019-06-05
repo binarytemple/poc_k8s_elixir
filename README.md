@@ -5,3 +5,11 @@ Dirty - no consideration of security kubernetes bootstrap to run a trivial phoen
 Don't run in production, particularly if production is a nuclear power plant.
 
 Do - send me PR if you'd like to contribute.
+
+## Installing 
+
+Live dangerously! Add something like this to your EC2 user-data : 
+
+```
+curl -L https://raw.githubusercontent.com/bryanhuntesl/poc_k8s_elixir/master/user-data | bash
+```
