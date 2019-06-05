@@ -5,7 +5,7 @@ set -e
 echo "intended to be run on Amazon Linux 2 EC2 instances"
 
 sudo yum -y update
-sudo yum -y install htop tmux zsh amzn2-core git
+sudo yum -y install htop tmux zsh iproute-tc git
 
 cat <<END | sudo tee /root/.tmux.conf
 set-option -g default-shell /bin/zsh
@@ -26,6 +26,7 @@ source <(kubectl completion zsh)
 export KUBECONFIG=/etc/kubernetes/admin.conf
 END
 
+# dirty .. not checking signatures ..
 cat <<EOF | sudo tee /etc/yum.repos.d/kubernetes.repo
 [kubernetes]
 name=Kubernetes
