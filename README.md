@@ -15,3 +15,8 @@ Live dangerously! Add something like this to your EC2 user-data :
 ```
 curl -L https://raw.githubusercontent.com/bryanhuntesl/poc_k8s_elixir/master/user-data | bash
 ```
+
+
+## Credits
+
+Part inspired by https://webcloudpower.com/deploy-phoenix-elixir-with-helm-kubernetes
