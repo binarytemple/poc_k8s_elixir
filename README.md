@@ -1,6 +1,8 @@
 # poc_k8s_elixir
 
-Dirty - no consideration of security kubernetes bootstrap to run a trivial phoenix application.
+Kubernetes bootstrap to run a trivial phoenix application for testing/training purposes.
+
+Dirty - no consideration of security, or restart safety
 
 Don't run in production, particularly if production is a nuclear power plant.
 
