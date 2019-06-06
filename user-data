@@ -65,7 +65,7 @@ sudo sysctl --system
 sudo yum -y update 
 
 sudo yum -y install kubeadm kubectl kubelet docker
-
+sudo usermod -a -G docker ec2-user
 
 sudo su -l -c "curl -L https://git.io/get_helm.sh | bash"
 sudo curl -L git.io/weave -o /usr/local/bin/weave
