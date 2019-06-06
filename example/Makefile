@@ -1,3 +1,4 @@
+.PHONY: build push run
 
 HUB_PREFIX ?= "bryanhuntesl"
 
